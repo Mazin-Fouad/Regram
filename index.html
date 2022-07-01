@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS File -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href=".favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./avicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon -->
+    <title>Regram</title>
+  </head>
+  <body onload="renderPosts()">
+    <header>
+      <div class="container">
+        <img src="./icons/logo.png" class="logo" />
+        <form class="header-search-container">
+          <input class="header-search" type="search" placeholder="Search" id="search-input" onfocus="hideSearchIcon()" onblur="showSearchIcon()" />
+          <img src="./icons/magnifying-glass.png" class="search-icon" alt="Search" id="search-icon" />
+        </form>
+        <div class="header-icons">
+          <a href="#"><img src="./icons/home.png" alt="Home" /></a>
+          <a href="#"><img src="./icons/send.png" alt="Send" /></a>
+          <a href="#"><img src="./icons/direction.png" alt="Explorar" /></a>
+          <a href="#"><img src="./icons/heart.png" alt="Like" /></a>
+          <a href="#"><img src="./imgs/img1.png" alt="profile-pic" class="profile-pic" /></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="stories">
+      <div class="suggestion-box">
+        <div class="user-profile">
+          <div class="user-img">
+            <img src="./imgs/img1.png" />
+            <span>Mazin Fouad</span>
+          </div>
+          <span><a href="#">Switch</a></span>
+        </div>
+
+        <div class="suggestions">
+          <h5>Suggestions For You</h5>
+          <a href="#">See all</a>
+        </div>
+
+        <div class="user-profile">
+          <div class="user-img">
+            <img src="./imgs/story1.jpg" />
+            <span>ilke.90</span>
+          </div>
+          <span><a href="#">Follow</a></span>
+        </div>
+        <div class="user-profile">
+          <div class="user-img">
+            <img src="./imgs/story3.jpg" />
+            <span>james.nr</span>
+          </div>
+          <span><a href="#">Follow</a></span>
+        </div>
+        <div class="user-profile">
+          <div class="user-img">
+            <img src="./imgs/story6.jpg" />
+            <span>Phillip.91</span>
+          </div>
+          <span><a href="#">Follow</a></span>
+        </div>
+        <div class="user-profile">
+          <div class="user-img">
+            <img src="./imgs/story5.jpg" />
+            <span>Jana.elnino</span>
+          </div>
+          <span><a href="#">Follow</a></span>
+        </div>
+        <footer>
+          <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Press</a>
+            <a href="#">API</a>
+            <a href="#">Jobs</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Location</a>
+            <a href="#">Language</a>
+          </div>
+          <div class="copy-right">© 2022 REGRAM</div>
+        </footer>
+      </div>
+
+      <div class="container">
+        <div class="story-box">
+          <img src="imgs/story1.jpg" alt="story" class="story" />
+          <span>ilke.90</span>
+        </div>
+        <div class="story-box">
+          <img src="imgs/story2.jpg" alt="story" class="story" />
+          <span>mero.89</span>
+        </div>
+        <div class="story-box">
+          <img src="imgs/story3.jpg" alt="story" class="story" />
+          <span>james.nr</span>
+        </div>
+        <div class="story-box">
+          <img src="imgs/story4.jpg" alt="story" class="story" />
+          <span>Max-meyer</span>
+        </div>
+        <div class="story-box">
+          <img src="imgs/story5.jpg" alt="story" class="story" />
+          <span>Jana.elnino</span>
+        </div>
+        <div class="story-box">
+          <img src="imgs/story6.jpg" alt="story" class="story" />
+          <span>Phillip.91</span>
+        </div>
+        <div class="story-box">
+          <img src="imgs/story7.jpg" alt="story" class="story" />
+          <span>Mike.kl</span>
+        </div>
+      </div>
+      <section id="posts-container"></section>
+      <aside></aside>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
