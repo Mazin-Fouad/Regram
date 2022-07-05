@@ -46,6 +46,13 @@ function renderPosts() {
   for (let i = 0; i < posts.length; i++) {
     let post = posts[i];
     content.innerHTML += generateCardHTML(post, i);
+    renderCommentsForPost(i);
+    /*  let commentsContainer = document.getElementById(`comments-field${i}`);
+    for (let j = 0; j < post['comments'].length; j++) {
+      const userComment = post['comments'][j];
+      const userName = post['users'][j];
+      commentsContainer.innerHTML += generateCommentContainer(userName, userComment);
+    } */
   }
 }
 
@@ -55,6 +62,7 @@ function getContentContainer() {
 
 function renderCommentsForPost(i) {
   let commentsContainer = document.getElementById(`comments-field${i}`);
+  let post = posts[i];
   for (let j = 0; j < post['comments'].length; j++) {
     const userComment = post['comments'][j];
     const userName = post['users'][j];
